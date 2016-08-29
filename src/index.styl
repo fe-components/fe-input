@@ -1,0 +1,36 @@
+.InputOuter
+  vertical-align middle
+  display inline-block
+  .labelContainer
+    display flex
+    align-items center
+    width 100%
+    input
+      &:disabled
+        color #ccc
+        cursor no-drop
+        background #f9f9f9
+      line-height 32px
+      border 1px solid #ccc
+      padding 0 10px
+      width 100%
+    .label
+      display inline-block
+      margin-right 10px
+      font-size 13px
+    .required
+      position relative
+    .required:before
+      content '*'
+      color #f45834
+      position absolute
+      line-height 34px
+      display inline-block
+      // height 22px
+      width 1em
+      font-size 2em
+      transform translate(-50%)
+      font-family arail
+
+    .inputContainer
+      flex 1
